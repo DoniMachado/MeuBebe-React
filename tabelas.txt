@@ -1,0 +1,25 @@
+Tabelas Supabase
+
+Tabela Actions
+
+id - uuid - PK - Default value: gen_random_uuid()
+user_id - uuid - FK - Tabela Auth (auth.user_id)
+action_type- int2 - NOT NULL 
+start_date - timestamp - NULL
+end_date - timestamp - NULL 
+observation - text - NOT NULL
+type- int2 - NOT NULL 
+side- int2 - NOT NULL 
+created_at - timestamp - NOT NULL - Default value: now()
+status - bool - NOT NULL - Default value: true
+
+
+Tabela Profile
+
+id - uuid - PK - Default value: gen_random_uuid()
+user_id - uuid - FK - Tabela Auth (auth.user_id)
+name - text - NOT NULL
+height- float8 - NOT NULL 
+weight- float8 - NOT NULL 
+created_at - timestamp - NOT NULL - Default value: now()
+status - bool - NOT NULL - Default value: true

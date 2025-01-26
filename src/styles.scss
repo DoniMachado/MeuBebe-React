@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.general-textfield > div,
+.general-button {
+  border-radius: 30px !important;
+}
+
+.MuiSwitch-root {
+  width: 200px !important;
+}
+
+.MuiButtonBase-root.MuiSwitch-switchBase.Mui-checked {
+  transform: translateX(150px) !important;
+}
