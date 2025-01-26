@@ -11,7 +11,7 @@ import logo from "../../Assets/img/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import { signUp } from "../../Services/authentication.js";
 import { useState } from "react";
-import { handleChange } from "../../Utils/core.js";
+import { handleChange } from "../../Utils/core.jsx";
 import { validateEmail, validPassword } from "../../Utils/validators";
 import { useTheme } from "@mui/material/styles";
 

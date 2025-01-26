@@ -14,13 +14,13 @@ dayjs.extend(duration);
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
-// Essas variaveis não funcionaram no codesandbox, deu um erro sobre não poder utilizar fora de module
-// import.meta.VITE_SUPABASE_URL,
-// import.meta.VITE_SUPABASE_ANON_KEY
+//variaveis do .env para codesandbox
+//process.env.VITE_SUPABASE_URL,
+//process.env.VITE_SUPABASE_ANON_KEY
 
 const supabase = createClient(
-  process.env.VITE_SUPABASE_URL,
-  process.env.VITE_SUPABASE_ANON_KEY
+  import.meta.env.VITE_SUPABASE_URL,
+  import.meta.env.VITE_SUPABASE_ANON_KEY
 );
 
 const AppContext = createContext(null);

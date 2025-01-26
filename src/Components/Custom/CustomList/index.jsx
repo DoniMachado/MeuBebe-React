@@ -13,7 +13,7 @@ import {
   actionTypeStr,
   actionTypeColor,
   getIcon,
-} from "../../../Utils/core.js";
+} from "../../../Utils/core.jsx";
 
 const CustomList = ({ items, ...props }) => {
   const { translate } = useAppContext();
